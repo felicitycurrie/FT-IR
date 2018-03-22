@@ -1,0 +1,8 @@
+Propranolol45=FC152R(33,:);
+PropM1=Propranolol45(:,1:1:403);
+PropM2=Propranolol45(:,404:1:832);
+Propranolol834=[PropM1 0 0 PropM2];
+plot(ut834,Propranolol834,'g');
+hold
+Current plot held
+[out,outabs,outsort,P,Q,R] = varplotgteq2SDFTIRMay09(DF1Load834,wavenumberID,ut834);

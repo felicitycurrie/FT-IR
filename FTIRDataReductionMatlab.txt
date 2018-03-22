@@ -1,0 +1,11 @@
+%FTIR Data Reduction in Matlab to retain only absorbances containing biological information
+
+%After CO2 correction using transco2corr2.m which reduces data from 1764 to 1564 variables
+%and after scaling spectra to 0-1 using scaleM.m
+
+
+Data1b = DataSC(:,7:1:409);
+Data2b = DataSC(:,955:1:1383);
+DataR = [Data1,Data2];
+
+%Followed by autoscaling variables using autoscal.m
